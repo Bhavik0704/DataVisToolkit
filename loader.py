@@ -7,4 +7,4 @@ def load_csv(path: str) -> pd.DataFrame:
             raise ValueError("CSV file is empty.")
         return df
     except Exception as e:
-        raise RuntimeError(f"Failed to load CSV: {e}")
+        raise RuntimeError("Failed to load CSV: " + str(e))
