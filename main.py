@@ -23,7 +23,7 @@ def main():
     elif args.graph == "grouped":
         grouped_bar(df, args.x, args.y, args.out)
 
-    print(f"Graph saved to {args.out}")
+    print("Graph saved to " + args.out)
 
 if __name__ == "__main__":
     main()
